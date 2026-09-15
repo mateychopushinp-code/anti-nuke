@@ -3,80 +3,376 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anti-Nuke — Privacy Policy</title>
+
+    <title>Privacy Policy | Anti-Nuke</title>
+
+    <meta name="description"
+          content="Privacy Policy for Anti-Nuke, a Discord server protection bot.">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b0d12;
+            color: #ffffff;
+            line-height: 1.7;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: #11141b;
+            border-bottom: 1px solid #222631;
+        }
+
+        nav .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav .logo img {
+            width: 38px;
+            height: 38px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        nav a {
+            color: #cfd3dc;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        .page {
+            max-width: 900px;
+            margin: 70px auto;
+            padding: 0 25px;
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .page-header h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .page-header p {
+            color: #8f96a5;
+        }
+
+        .content {
+            background: #151923;
+            border: 1px solid #252a36;
+            border-radius: 15px;
+            padding: 40px;
+        }
+
+        .content h2 {
+            font-size: 24px;
+            margin-top: 35px;
+            margin-bottom: 12px;
+        }
+
+        .content h2:first-child {
+            margin-top: 0;
+        }
+
+        .content p {
+            color: #b8bdc9;
+            margin-bottom: 15px;
+        }
+
+        .content ul {
+            color: #b8bdc9;
+            margin: 10px 0 20px 25px;
+        }
+
+        .content li {
+            margin-bottom: 8px;
+        }
+
+        .back {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 22px;
+            background: #5865f2;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .back:hover {
+            background: #4752c4;
+        }
+
+        footer {
+            text-align: center;
+            padding: 35px;
+            margin-top: 60px;
+            border-top: 1px solid #222631;
+            color: #777e8c;
+        }
+
+        footer a {
+            color: #9da3ff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                padding: 18px 5%;
+            }
+
+            nav .logo {
+                font-size: 20px;
+            }
+
+            nav .logo img {
+                width: 32px;
+                height: 32px;
+            }
+
+            nav a {
+                margin-left: 10px;
+                font-size: 14px;
+            }
+
+            .page {
+                margin: 45px auto;
+            }
+
+            .page-header h1 {
+                font-size: 36px;
+            }
+
+            .content {
+                padding: 25px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Anti-Nuke — Privacy Policy</h1>
-    <p><strong>Last updated:</strong> September 15, 2026</p>
 
-    <h2>1. Information We Process</h2>
-    <p>
-        Depending on the features enabled on a server, Anti-Nuke may process
-        information provided through Discord's API, including Discord user
-        IDs, server IDs, channel IDs, role IDs, bot IDs, server configuration
-        information, and audit log information related to security events.
+<nav>
+
+    <div class="logo">
+        <img src="logo.png" alt="Anti-Nuke logo">
+        <span>Anti-Nuke</span>
+    </div>
+
+    <div>
+        <a href="index.html">Home</a>
+        <a href="terms.html">Terms</a>
+    </div>
+
+</nav>
+
+<main class="page">
+
+    <div class="page-header">
+
+        <h1>Privacy Policy</h1>
+
+        <p>Last updated: September 15, 2026</p>
+
+    </div>
+
+    <div class="content">
+
+        <h2>1. Introduction</h2>
+
+        <p>
+            Anti-Nuke is a Discord security bot designed to help protect
+            Discord servers from destructive and unauthorized activity.
+        </p>
+
+        <p>
+            This Privacy Policy explains what information Anti-Nuke may
+            process when it is added to or used in a Discord server.
+        </p>
+
+
+        <h2>2. Information We May Process</h2>
+
+        <p>
+            To provide security features, Anti-Nuke may process certain
+            Discord-related information.
+        </p>
+
+        <ul>
+            <li>Discord user IDs</li>
+            <li>Discord server IDs</li>
+            <li>Channel IDs and channel configuration</li>
+            <li>Role IDs and role configuration</li>
+            <li>Bot and member information needed for security actions</li>
+            <li>Discord audit log information related to security events</li>
+        </ul>
+
+
+        <h2>3. Security Logs</h2>
+
+        <p>
+            Anti-Nuke may record security-related events in order to detect
+            suspicious activity and help server administrators investigate
+            attacks.
+        </p>
+
+        <p>
+            These events may include mass bans, mass kicks, channel deletion,
+            role deletion, unauthorized bot additions and unauthorized
+            administrator permissions.
+        </p>
+
+
+        <h2>4. Server Backups</h2>
+
+        <p>
+            Anti-Nuke may create backups of certain server configuration
+            information to assist with automatic restoration.
+        </p>
+
+        <p>
+            Backup information may include channel names, channel settings,
+            role names, role settings, permissions and permission
+            overwrites.
+        </p>
+
+        <p>
+            Backups are used for security and restoration purposes and are
+            not intended to store private conversations or message content.
+        </p>
+
+
+        <h2>5. Information We Do Not Intentionally Collect</h2>
+
+        <p>
+            Anti-Nuke does not intentionally collect Discord account
+            passwords, payment card information or Discord account tokens.
+        </p>
+
+
+        <h2>6. How Information Is Used</h2>
+
+        <p>
+            Information processed by Anti-Nuke may be used to:
+        </p>
+
+        <ul>
+            <li>Detect suspicious server activity.</li>
+            <li>Respond to destructive attacks.</li>
+            <li>Restore supported server configuration.</li>
+            <li>Provide security logs to server administrators.</li>
+            <li>Improve the reliability and functionality of the bot.</li>
+        </ul>
+
+
+        <h2>7. Data Sharing</h2>
+
+        <p>
+            Anti-Nuke does not sell personal information.
+        </p>
+
+        <p>
+            Information is not intentionally shared with third parties
+            except where necessary to operate the service, provide requested
+            functionality or comply with applicable legal requirements.
+        </p>
+
+
+        <h2>8. Data Retention</h2>
+
+        <p>
+            Security logs and backups may be retained for as long as they are
+            reasonably needed to provide security and restoration features.
+        </p>
+
+        <p>
+            Removing Anti-Nuke from a server may stop further processing of
+            that server's information by the bot.
+        </p>
+
+
+        <h2>9. Discord</h2>
+
+        <p>
+            Anti-Nuke operates through Discord and is subject to the
+            functionality and limitations of the Discord platform.
+        </p>
+
+        <p>
+            Your use of Discord is also subject to Discord's own Terms of
+            Service and Privacy Policy.
+        </p>
+
+
+        <h2>10. Security</h2>
+
+        <p>
+            Reasonable measures are used to protect information processed by
+            Anti-Nuke. However, no online service can guarantee absolute
+            security.
+        </p>
+
+
+        <h2>11. Changes to This Policy</h2>
+
+        <p>
+            This Privacy Policy may be updated from time to time as Anti-Nuke
+            develops or its features change.
+        </p>
+
+        <p>
+            The latest version will be published on this page.
+        </p>
+
+
+        <h2>12. Contact</h2>
+
+        <p>
+            If you have questions about this Privacy Policy or Anti-Nuke's
+            handling of information, please use the official Discord or
+            support method associated with the project.
+        </p>
+
+
+        <a class="back" href="index.html">
+            ← Back to Anti-Nuke
+        </a>
+
+    </div>
+
+</main>
+
+<footer>
+
+    <p>© 2026 Anti-Nuke. All rights reserved.</p>
+
+    <p style="margin-top: 10px;">
+        <a href="terms.html">Terms of Service</a>
+        <a href="privacy.html">Privacy Policy</a>
     </p>
 
-    <p>
-        Anti-Nuke does not intentionally collect Discord passwords, payment
-        information, or Discord account tokens.
-    </p>
+</footer>
 
-    <h2>2. Security Logs</h2>
-    <p>
-        Anti-Nuke may record security-related events such as mass bans,
-        mass kicks, channel deletions, role deletions, unauthorized bot
-        additions, and unauthorized administrator permissions.
-    </p>
-
-    <h2>3. Backups</h2>
-    <p>
-        Anti-Nuke may store server configuration backups containing channel
-        names and settings, role names and settings, role permissions,
-        channel permission overwrites, and other configuration information
-        required for restoration.
-    </p>
-
-    <h2>4. Data Sharing</h2>
-    <p>
-        We do not sell personal information.
-    </p>
-
-    <p>
-        Information processed by Anti-Nuke is not intentionally shared with
-        third parties except where necessary to operate the Bot, provide its
-        functionality, or comply with applicable law.
-    </p>
-
-    <h2>5. Data Retention</h2>
-    <p>
-        Security logs and backups may be retained for as long as they are
-        needed to provide Anti-Nuke's security and restoration features.
-    </p>
-
-    <h2>6. Discord</h2>
-    <p>
-        Anti-Nuke operates through Discord's platform and Discord's API.
-        Use of Discord remains subject to Discord's own Terms of Service
-        and Privacy Policy.
-    </p>
-
-    <h2>7. Data Security</h2>
-    <p>
-        Reasonable measures are used to protect information processed by
-        Anti-Nuke. However, no online service can guarantee absolute security.
-    </p>
-
-    <h2>8. Changes</h2>
-    <p>
-        This Privacy Policy may be updated from time to time.
-    </p>
-
-    <h2>9. Contact</h2>
-    <p>
-        For privacy questions or requests regarding Anti-Nuke, please contact
-        the Bot's developer through the Discord account or support method
-        associated with Anti-Nuke.
-    </p>
 </body>
 </html>
