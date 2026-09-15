@@ -3,78 +3,372 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anti-Nuke — Terms of Service</title>
+
+    <title>Terms of Service | Anti-Nuke</title>
+
+    <meta name="description"
+          content="Terms of Service for Anti-Nuke, a Discord server protection bot.">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b0d12;
+            color: #ffffff;
+            line-height: 1.7;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: #11141b;
+            border-bottom: 1px solid #222631;
+        }
+
+        nav .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav .logo img {
+            width: 38px;
+            height: 38px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        nav a {
+            color: #cfd3dc;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        .page {
+            max-width: 900px;
+            margin: 70px auto;
+            padding: 0 25px;
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .page-header h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .page-header p {
+            color: #8f96a5;
+        }
+
+        .content {
+            background: #151923;
+            border: 1px solid #252a36;
+            border-radius: 15px;
+            padding: 40px;
+        }
+
+        .content h2 {
+            font-size: 24px;
+            margin-top: 35px;
+            margin-bottom: 12px;
+            color: #ffffff;
+        }
+
+        .content h2:first-child {
+            margin-top: 0;
+        }
+
+        .content p {
+            color: #b8bdc9;
+            margin-bottom: 15px;
+        }
+
+        .content ul {
+            color: #b8bdc9;
+            margin: 10px 0 20px 25px;
+        }
+
+        .content li {
+            margin-bottom: 8px;
+        }
+
+        .back {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 22px;
+            background: #5865f2;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .back:hover {
+            background: #4752c4;
+        }
+
+        footer {
+            text-align: center;
+            padding: 35px;
+            margin-top: 60px;
+            border-top: 1px solid #222631;
+            color: #777e8c;
+        }
+
+        footer a {
+            color: #9da3ff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                padding: 18px 5%;
+            }
+
+            nav .logo {
+                font-size: 20px;
+            }
+
+            nav .logo img {
+                width: 32px;
+                height: 32px;
+            }
+
+            nav a {
+                margin-left: 10px;
+                font-size: 14px;
+            }
+
+            .page {
+                margin: 45px auto;
+            }
+
+            .page-header h1 {
+                font-size: 36px;
+            }
+
+            .content {
+                padding: 25px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Anti-Nuke — Terms of Service</h1>
-    <p><strong>Last updated:</strong> September 15, 2026</p>
 
-    <h2>1. Use of the Bot</h2>
-    <p>
-        Anti-Nuke is a Discord security bot designed to help protect Discord
-        servers from malicious or unauthorized actions, including mass bans,
-        kicks, channel deletions, role deletions, unauthorized bot additions,
-        and unauthorized administrator permissions.
+<nav>
+
+    <div class="logo">
+        <img src="logo.png" alt="Anti-Nuke logo">
+        <span>Anti-Nuke</span>
+    </div>
+
+    <div>
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy</a>
+    </div>
+
+</nav>
+
+<main class="page">
+
+    <div class="page-header">
+
+        <h1>Terms of Service</h1>
+
+        <p>Last updated: September 15, 2026</p>
+
+    </div>
+
+    <div class="content">
+
+        <h2>1. Use of Anti-Nuke</h2>
+
+        <p>
+            Anti-Nuke is a Discord security bot designed to help protect
+            Discord servers from destructive or unauthorized activity.
+        </p>
+
+        <p>
+            Features may include protection against mass bans, mass kicks,
+            channel deletion, role deletion, unauthorized bot additions,
+            unauthorized administrator permissions and other potentially
+            destructive actions.
+        </p>
+
+        <p>
+            By using Anti-Nuke, you agree to use the bot in accordance with
+            Discord's Terms of Service and Community Guidelines.
+        </p>
+
+
+        <h2>2. Server Permissions</h2>
+
+        <p>
+            Anti-Nuke may require certain Discord permissions to perform its
+            security functions effectively.
+        </p>
+
+        <p>
+            Depending on the features being used, these permissions may
+            include access to audit logs, managing channels, managing roles,
+            banning or kicking members, managing webhooks and viewing or
+            sending messages.
+        </p>
+
+        <p>
+            Server administrators are responsible for reviewing and
+            configuring the permissions granted to the bot.
+        </p>
+
+
+        <h2>3. Automated Security Actions</h2>
+
+        <p>
+            Anti-Nuke may automatically respond to activity that appears to
+            be malicious or unauthorized.
+        </p>
+
+        <p>
+            Depending on the event and server configuration, automated
+            actions may include removing malicious users, restoring deleted
+            channels or roles, blocking unauthorized bot additions and
+            recording security events.
+        </p>
+
+        <p>
+            Anti-Nuke does not guarantee that every malicious action will be
+            detected, prevented or reversed.
+        </p>
+
+
+        <h2>4. Backups and Restoration</h2>
+
+        <p>
+            Anti-Nuke may create backups of certain Discord server
+            configuration data to assist with restoration.
+        </p>
+
+        <p>
+            Backups may include information such as channel settings, role
+            settings, permissions and permission overwrites.
+        </p>
+
+        <p>
+            Restoration capabilities are limited by Discord's API and the
+            information available to the bot. Messages and certain Discord
+            resources may not be recoverable.
+        </p>
+
+        <p>
+            We do not guarantee that backups will always be available,
+            complete or sufficient to fully restore a server.
+        </p>
+
+
+        <h2>5. Availability</h2>
+
+        <p>
+            Anti-Nuke is provided on an availability basis. We do not
+            guarantee that the bot will always be online, available or
+            completely error-free.
+        </p>
+
+        <p>
+            Discord outages, API limitations, rate limits, permission
+            changes, configuration problems and other technical issues may
+            affect the bot's functionality.
+        </p>
+
+
+        <h2>6. Prohibited Use</h2>
+
+        <p>
+            You may not use Anti-Nuke for activities that violate Discord's
+            rules or applicable laws.
+        </p>
+
+        <ul>
+            <li>Do not use the bot to attack or disrupt other Discord servers.</li>
+            <li>Do not use the bot to intentionally abuse Discord services.</li>
+            <li>Do not use the bot for activities that violate Discord's Terms of Service.</li>
+            <li>Do not intentionally interfere with the operation of the bot.</li>
+        </ul>
+
+
+        <h2>7. Changes to the Service</h2>
+
+        <p>
+            Anti-Nuke may be updated, modified, expanded or discontinued at
+            any time.
+        </p>
+
+        <p>
+            Features, permissions, security systems and other functionality
+            may change as the bot develops.
+        </p>
+
+
+        <h2>8. Changes to These Terms</h2>
+
+        <p>
+            These Terms of Service may be updated from time to time.
+            Continued use of Anti-Nuke after changes are published means
+            that you accept the updated terms.
+        </p>
+
+
+        <h2>9. Contact</h2>
+
+        <p>
+            If you need assistance regarding Anti-Nuke, please use the
+            official Discord or support method associated with the project.
+        </p>
+
+
+        <h2>10. Agreement</h2>
+
+        <p>
+            By adding or using Anti-Nuke on a Discord server, you acknowledge
+            that you have read and agree to these Terms of Service.
+        </p>
+
+        <a class="back" href="index.html">
+            ← Back to Anti-Nuke
+        </a>
+
+    </div>
+
+</main>
+
+<footer>
+
+    <p>© 2026 Anti-Nuke. All rights reserved.</p>
+
+    <p style="margin-top: 10px;">
+        <a href="terms.html">Terms of Service</a>
+        <a href="privacy.html">Privacy Policy</a>
     </p>
 
-    <p>
-        You agree to use the Bot in accordance with Discord's Terms of Service
-        and Community Guidelines.
-    </p>
+</footer>
 
-    <h2>2. Server Permissions</h2>
-    <p>
-        Anti-Nuke may require permissions such as viewing audit logs, managing
-        channels, managing roles, banning members, kicking members, and
-        managing webhooks.
-    </p>
-
-    <h2>3. Automated Actions</h2>
-    <p>
-        The Bot may automatically respond to suspicious activity. This may
-        include removing malicious users, restoring deleted channels or roles,
-        and recording security events.
-    </p>
-
-    <p>
-        Anti-Nuke does not guarantee that every malicious action will be
-        detected or prevented.
-    </p>
-
-    <h2>4. Backups and Restoration</h2>
-    <p>
-        Anti-Nuke may create backups of server configuration information to
-        support restoration features.
-    </p>
-
-    <p>
-        Backups are intended to assist with recovery and should not be
-        considered a guaranteed or permanent copy of a Discord server.
-    </p>
-
-    <h2>5. Availability</h2>
-    <p>
-        We do not guarantee that the Bot will always be available, error-free,
-        or able to prevent every type of attack.
-    </p>
-
-    <h2>6. Prohibited Use</h2>
-    <p>
-        You may not use Anti-Nuke to violate Discord's rules, attack other
-        users or servers, or interfere with Discord's services.
-    </p>
-
-    <h2>7. Changes</h2>
-    <p>
-        Features, functionality, and these Terms may be changed or updated
-        from time to time.
-    </p>
-
-    <h2>8. Contact</h2>
-    <p>
-        For questions or support regarding Anti-Nuke, please contact the
-        Bot's developer through the Discord account or support method
-        associated with the Bot.
-    </p>
 </body>
 </html>
