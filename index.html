@@ -194,11 +194,92 @@
 
         /* FEATURES */
 
-        .features {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-        }
+        <section id="commands" class="commands-section">
+    <div class="section-title">
+        <span>COMMANDS</span>
+        <h2>Everything you need to control Anti-Nuke</h2>
+        <p>Simple commands for managing and testing your server protection.</p>
+    </div>
+
+    <div class="command-grid">
+
+        <div class="command-card">
+            <h3>📖 Help & Status</h3>
+            <code>!help</code>
+            <p>Shows all available Anti-Nuke commands.</p>
+
+            <code>!antinuke status</code>
+            <p>Shows your current protection status and thresholds.</p>
+        </div>
+
+        <div class="command-card">
+            <h3>⚙️ Thresholds</h3>
+
+            <code>!antinuke threshold</code>
+            <p>Shows the current protection thresholds.</p>
+
+            <code>!antinuke threshold channels 5</code>
+            <code>!antinuke threshold bans 5</code>
+            <code>!antinuke threshold kicks 5</code>
+            <code>!antinuke threshold roles 5</code>
+
+            <p>Configure how many actions trigger Anti-Nuke protection.</p>
+        </div>
+
+        <div class="command-card">
+            <h3>👥 Whitelist</h3>
+
+            <code>!antinuke whitelist</code>
+            <p>Shows the current whitelist.</p>
+
+            <code>!antinuke whitelist add @user</code>
+            <code>!antinuke whitelist remove @user</code>
+
+            <p>Protect trusted users from Anti-Nuke punishment.</p>
+        </div>
+
+        <div class="command-card">
+            <h3>💾 Backups</h3>
+
+            <code>!antinuke backup</code>
+
+            <p>Create a manual server backup.</p>
+            <p>Anti-Nuke also creates automatic backups.</p>
+        </div>
+
+        <div class="command-card">
+            <h3>🧪 Safe Testing</h3>
+
+            <code>!testantinuke</code>
+            <code>!testchannelnuke</code>
+            <code>!testbannuke</code>
+            <code>!testkicknuke</code>
+            <code>!testrolenuke</code>
+            <code>!testbotnuke</code>
+            <code>!testadminnuke</code>
+
+            <p>Safely check that your Anti-Nuke system is working.</p>
+        </div>
+
+        <div class="command-card">
+            <h3>🛡️ Automatic Protection</h3>
+
+            <p>Anti-Nuke automatically protects against:</p>
+
+            <ul>
+                <li>Mass channel deletion</li>
+                <li>Mass role deletion</li>
+                <li>Mass bans</li>
+                <li>Mass kicks</li>
+                <li>Unauthorized bots</li>
+                <li>Unauthorized Administrator permissions</li>
+                <li>Automatic restoration</li>
+                <li>Automatic server backups</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
 
         .feature {
             background: #151923;
