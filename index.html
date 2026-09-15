@@ -16,6 +16,10 @@
             padding: 0;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: Arial, sans-serif;
             background: #0b0d12;
@@ -30,28 +34,31 @@
             padding: 20px 8%;
             background: #11141b;
             border-bottom: 1px solid #222631;
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
 
         nav .logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 24px;
-    font-weight: bold;
-}
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 24px;
+            font-weight: bold;
+        }
 
-nav .logo img {
-    width: 38px;
-    height: 38px;
-    border-radius: 10px;
-    object-fit: cover;
-}
-
+        nav .logo img {
+            width: 38px;
+            height: 38px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
 
         nav a {
             color: #cfd3dc;
             text-decoration: none;
             margin-left: 25px;
+            transition: 0.2s;
         }
 
         nav a:hover {
@@ -60,13 +67,27 @@ nav .logo img {
 
         .hero {
             text-align: center;
-            padding: 110px 20px 90px;
-            background: linear-gradient(180deg, #151923 0%, #0b0d12 100%);
+            padding: 120px 20px 110px;
+            background:
+                radial-gradient(circle at top, #20264a 0%, #151923 35%, #0b0d12 75%);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 8px 15px;
+            margin-bottom: 25px;
+            border: 1px solid #30375d;
+            border-radius: 999px;
+            background: #151a30;
+            color: #9da6ff;
+            font-size: 14px;
+            font-weight: bold;
         }
 
         .hero h1 {
-            font-size: 64px;
-            margin-bottom: 20px;
+            font-size: 68px;
+            line-height: 1.1;
+            margin-bottom: 25px;
         }
 
         .hero h1 span {
@@ -74,19 +95,24 @@ nav .logo img {
         }
 
         .hero p {
-            max-width: 700px;
+            max-width: 720px;
             margin: 0 auto 35px;
             color: #b8bdc9;
             font-size: 19px;
         }
 
+        .buttons {
+            margin-top: 10px;
+        }
+
         .buttons a {
             display: inline-block;
-            padding: 14px 25px;
-            margin: 5px;
+            padding: 15px 28px;
+            margin: 6px;
             border-radius: 8px;
             text-decoration: none;
             font-weight: bold;
+            transition: 0.2s;
         }
 
         .invite {
@@ -96,6 +122,7 @@ nav .logo img {
 
         .invite:hover {
             background: #4752c4;
+            transform: translateY(-2px);
         }
 
         .learn {
@@ -103,35 +130,92 @@ nav .logo img {
             color: white;
         }
 
+        .learn:hover {
+            background: #2c3140;
+            transform: translateY(-2px);
+        }
+
         section {
-            padding: 80px 8%;
-            max-width: 1200px;
+            padding: 90px 8%;
+            max-width: 1250px;
             margin: auto;
         }
 
         section h2 {
             text-align: center;
-            font-size: 36px;
+            font-size: 38px;
             margin-bottom: 15px;
         }
 
         .subtitle {
             text-align: center;
             color: #9da3b0;
-            margin-bottom: 45px;
+            max-width: 700px;
+            margin: 0 auto 50px;
         }
+
+        /* HOW IT WORKS */
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .step {
+            position: relative;
+            background: #151923;
+            border: 1px solid #252a36;
+            border-radius: 14px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .step-number {
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            background: #5865f2;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .step h3 {
+            margin-bottom: 10px;
+        }
+
+        .step p {
+            color: #aeb4c0;
+        }
+
+        /* FEATURES */
 
         .features {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            grid-template-columns: repeat(4, 1fr);
             gap: 20px;
         }
 
         .feature {
             background: #151923;
             border: 1px solid #252a36;
-            border-radius: 12px;
+            border-radius: 14px;
             padding: 25px;
+            transition: 0.2s;
+        }
+
+        .feature:hover {
+            transform: translateY(-4px);
+            border-color: #3c4470;
+        }
+
+        .feature-icon {
+            font-size: 30px;
+            margin-bottom: 15px;
         }
 
         .feature h3 {
@@ -140,24 +224,119 @@ nav .logo img {
 
         .feature p {
             color: #aeb4c0;
+            font-size: 15px;
         }
+
+        /* RESTORATION */
+
+        .restore {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+            background: #11141b;
+            border: 1px solid #252a36;
+            border-radius: 18px;
+            padding: 55px;
+        }
+
+        .restore h2 {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .restore p {
+            color: #aeb4c0;
+            margin-bottom: 20px;
+        }
+
+        .restore-list {
+            list-style: none;
+        }
+
+        .restore-list li {
+            margin-bottom: 12px;
+            color: #d5d8e0;
+        }
+
+        .restore-list li::before {
+            content: "✓";
+            color: #5865f2;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .restore-box {
+            background: #0b0d12;
+            border: 1px solid #292f40;
+            border-radius: 14px;
+            padding: 30px;
+        }
+
+        .restore-box h3 {
+            margin-bottom: 20px;
+        }
+
+        .restore-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 14px 0;
+            border-bottom: 1px solid #222631;
+            color: #b8bdc9;
+        }
+
+        .restore-item:last-child {
+            border-bottom: none;
+        }
+
+        .status {
+            color: #6ee7a0;
+            font-weight: bold;
+        }
+
+        /* PREMIUM */
 
         .premium {
             text-align: center;
-            background: #11141b;
-            border-radius: 15px;
-            padding: 60px 25px;
+            background:
+                linear-gradient(135deg, #161b35, #11141b);
+            border: 1px solid #30375d;
+            border-radius: 18px;
+            padding: 70px 25px;
+        }
+
+        .premium h2 {
+            margin-bottom: 15px;
         }
 
         .premium p {
             color: #aeb4c0;
-            max-width: 650px;
-            margin: 15px auto 30px;
+            max-width: 700px;
+            margin: 0 auto 30px;
         }
+
+        .premium-features {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 30px;
+        }
+
+        .premium-feature {
+            padding: 10px 16px;
+            background: #1b2030;
+            border: 1px solid #2c3348;
+            border-radius: 8px;
+            color: #cdd2df;
+            font-size: 14px;
+        }
+
+        /* FOOTER */
 
         footer {
             text-align: center;
-            padding: 35px;
+            padding: 40px 20px;
             border-top: 1px solid #222631;
             color: #777e8c;
         }
@@ -168,17 +347,73 @@ nav .logo img {
             margin: 0 10px;
         }
 
-        @media (max-width: 600px) {
-            .hero h1 {
-                font-size: 44px;
+        footer a:hover {
+            color: white;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 900px) {
+
+            .features {
+                grid-template-columns: repeat(2, 1fr);
             }
 
+            .steps {
+                grid-template-columns: 1fr;
+            }
+
+            .restore {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+
             nav {
-                padding: 18px 5%;
+                padding: 16px 5%;
+            }
+
+            nav .logo {
+                font-size: 20px;
+            }
+
+            nav .logo img {
+                width: 32px;
+                height: 32px;
             }
 
             nav a {
                 margin-left: 10px;
+                font-size: 14px;
+            }
+
+            .hero {
+                padding: 90px 20px 80px;
+            }
+
+            .hero h1 {
+                font-size: 44px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            section {
+                padding: 70px 5%;
+            }
+
+            section h2 {
+                font-size: 32px;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+
+            .restore {
+                padding: 30px 22px;
             }
         }
     </style>
@@ -187,107 +422,301 @@ nav .logo img {
 <body>
 
 <nav>
+
     <div class="logo">
-    <img src="logo.png" alt="Anti-Nuke logo">
-    <span>Anti-Nuke</span>
-</div>
+        <img src="logo.png" alt="Anti-Nuke logo">
+        <span>Anti-Nuke</span>
+    </div>
+
     <div>
         <a href="#features">Features</a>
+        <a href="#how-it-works">How It Works</a>
         <a href="#premium">Premium</a>
     </div>
+
 </nav>
+
+
+<!-- HERO -->
 
 <section class="hero">
 
-    <h1>Protect Your <span>Discord Server.</span></h1>
+    <div class="badge">
+        🛡️ Discord Server Protection
+    </div>
+
+    <h1>
+        Protect Your <span>Discord Server.</span>
+    </h1>
 
     <p>
-        Anti-Nuke provides powerful automated protection against
-        destructive Discord attacks, helping keep your server safe
-        when things go wrong.
+        Anti-Nuke provides automated protection against destructive
+        Discord attacks, helping keep your server safe when things go wrong.
     </p>
 
     <div class="buttons">
-       <a class="invite" href="https://discord.com/oauth2/authorize?client_id=1549396559001559150">
+
+        <a class="invite"
+           href="https://discord.com/oauth2/authorize?client_id=1549396559001559150">
             Add Anti-Nuke
         </a>
 
         <a class="learn" href="#features">
-            View Features
+            Explore Features
         </a>
+
     </div>
 
 </section>
+
+
+<!-- HOW IT WORKS -->
+
+<section id="how-it-works">
+
+    <h2>How Anti-Nuke Works</h2>
+
+    <p class="subtitle">
+        Anti-Nuke continuously watches your server and reacts when
+        suspicious destructive activity is detected.
+    </p>
+
+    <div class="steps">
+
+        <div class="step">
+
+            <div class="step-number">
+                1
+            </div>
+
+            <h3>Detect</h3>
+
+            <p>
+                Anti-Nuke monitors important server activity and
+                Discord audit logs for suspicious actions.
+            </p>
+
+        </div>
+
+        <div class="step">
+
+            <div class="step-number">
+                2
+            </div>
+
+            <h3>Protect</h3>
+
+            <p>
+                When dangerous activity reaches configured thresholds,
+                Anti-Nuke takes automated protective action.
+            </p>
+
+        </div>
+
+        <div class="step">
+
+            <div class="step-number">
+                3
+            </div>
+
+            <h3>Restore</h3>
+
+            <p>
+                Supported deleted channels and roles can be restored
+                using the latest available server backup.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FEATURES -->
 
 <section id="features">
 
     <h2>Powerful Protection</h2>
 
     <p class="subtitle">
-        Anti-Nuke watches for suspicious activity and reacts automatically.
+        Multiple layers of protection designed to help defend
+        your Discord server from common destructive attacks.
     </p>
 
     <div class="features">
 
         <div class="feature">
-            <h3>🛡️ Anti-Ban</h3>
+
+            <div class="feature-icon">🛡️</div>
+
+            <h3>Anti-Ban</h3>
+
             <p>
-                Detects suspicious mass-ban activity and takes protective action.
+                Detects suspicious mass-ban activity and can take
+                protective action against the attacker.
             </p>
+
         </div>
 
         <div class="feature">
-            <h3>👢 Anti-Kick</h3>
+
+            <div class="feature-icon">👢</div>
+
+            <h3>Anti-Kick</h3>
+
             <p>
-                Helps protect your community from mass-kick attacks.
+                Helps protect your community from mass-kick attacks
+                and unauthorized member removals.
             </p>
+
         </div>
 
         <div class="feature">
-            <h3>📁 Anti-Channel Delete</h3>
+
+            <div class="feature-icon">📁</div>
+
+            <h3>Anti-Channel Delete</h3>
+
             <p>
-                Detects destructive channel deletion and can restore deleted channels.
+                Detects destructive channel deletion and supports
+                automatic restoration from backups.
             </p>
+
         </div>
 
         <div class="feature">
-            <h3>🎭 Anti-Role Delete</h3>
+
+            <div class="feature-icon">🎭</div>
+
+            <h3>Anti-Role Delete</h3>
+
             <p>
-                Protects important server roles from malicious deletion.
+                Protects important server roles from malicious
+                deletion and supports restoration.
             </p>
+
         </div>
 
         <div class="feature">
-            <h3>🤖 Anti-Bot Add</h3>
+
+            <div class="feature-icon">🤖</div>
+
+            <h3>Anti-Bot Add</h3>
+
             <p>
-                Detects unauthorized bots being added to your server.
+                Detects unauthorized bots being added to your
+                Discord server.
             </p>
+
         </div>
 
         <div class="feature">
-            <h3>⚙️ Permission Protection</h3>
+
+            <div class="feature-icon">⚙️</div>
+
+            <h3>Permission Protection</h3>
+
             <p>
-                Helps prevent unauthorized administrator permissions from being granted.
+                Helps prevent unauthorized Administrator permissions
+                from being granted.
             </p>
+
         </div>
 
         <div class="feature">
-            <h3>♻️ Automatic Restoration</h3>
+
+            <div class="feature-icon">♻️</div>
+
+            <h3>Automatic Restoration</h3>
+
             <p>
-                Uses server backups to help restore deleted channels and roles.
+                Uses server backups to help restore supported
+                deleted channels and roles.
             </p>
+
         </div>
 
         <div class="feature">
-            <h3>📋 Security Logging</h3>
+
+            <div class="feature-icon">📋</div>
+
+            <h3>Security Logging</h3>
+
             <p>
-                Records important security events so administrators can investigate attacks.
+                Records important security events so administrators
+                can investigate suspicious activity.
             </p>
+
         </div>
 
     </div>
 
 </section>
+
+
+<!-- RESTORATION -->
+
+<section>
+
+    <div class="restore">
+
+        <div>
+
+            <h2>Automatic Restoration</h2>
+
+            <p>
+                Anti-Nuke can maintain backups of important server
+                configuration and use them to help recover from
+                destructive attacks.
+            </p>
+
+            <ul class="restore-list">
+
+                <li>Channel configuration backups</li>
+
+                <li>Role configuration backups</li>
+
+                <li>Permission overwrite backups</li>
+
+                <li>Automatic restoration after detected attacks</li>
+
+            </ul>
+
+        </div>
+
+        <div class="restore-box">
+
+            <h3>Backup System</h3>
+
+            <div class="restore-item">
+                <span>Channels</span>
+                <span class="status">Protected</span>
+            </div>
+
+            <div class="restore-item">
+                <span>Roles</span>
+                <span class="status">Protected</span>
+            </div>
+
+            <div class="restore-item">
+                <span>Permissions</span>
+                <span class="status">Backed Up</span>
+            </div>
+
+            <div class="restore-item">
+                <span>Security Logs</span>
+                <span class="status">Active</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PREMIUM -->
 
 <section id="premium">
 
@@ -296,25 +725,58 @@ nav .logo img {
         <h2>Anti-Nuke Premium</h2>
 
         <p>
-            Unlock advanced protection, enhanced backups, additional
-            configuration options and more with Anti-Nuke Premium.
+            Take your server protection further with advanced
+            configuration, enhanced security tools and additional
+            protection features.
         </p>
 
+        <div class="premium-features">
+
+            <div class="premium-feature">
+                ⚡ Advanced Protection
+            </div>
+
+            <div class="premium-feature">
+                💾 Enhanced Backups
+            </div>
+
+            <div class="premium-feature">
+                ⚙️ More Configuration
+            </div>
+
+            <div class="premium-feature">
+                📊 Advanced Security
+            </div>
+
+        </div>
+
         <a class="invite" href="#">
-            Coming Soon
+            Premium Coming Soon
         </a>
 
     </div>
 
 </section>
 
+
+<!-- FOOTER -->
+
 <footer>
 
-    <p>© 2026 Anti-Nuke. All rights reserved.</p>
+    <p>
+        © 2026 Anti-Nuke. All rights reserved.
+    </p>
 
     <p style="margin-top: 10px;">
-        <a href="terms.html">Terms of Service</a>
-        <a href="privacy.html">Privacy Policy</a>
+
+        <a href="terms.html">
+            Terms of Service
+        </a>
+
+        <a href="privacy.html">
+            Privacy Policy
+        </a>
+
     </p>
 
 </footer>
